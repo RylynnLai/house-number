@@ -3,7 +3,6 @@
 
 import os
 import re
-import datetime
 import xlsxwriter
 import sys
 
@@ -132,9 +131,7 @@ class GroupMember(object):
 
 if __name__ == "__main__":
 
-    print datetime.datetime.now()
     obj = GroupMember('/Users/longzhou.lai/Documents/Python/wechatgroupmember/')
     obj.find_member_name(obj)
     obj.analyse_member_house_number(obj)
     obj.export_excel(obj)
-    print datetime.datetime.now()
